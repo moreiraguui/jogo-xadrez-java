@@ -7,8 +7,15 @@ import chess.enums.Color;
 
 public class Pawn extends ChessPiece {
 
+    private static final String PIECE_PAWN = "P";
+
     public Pawn(Board board, Color color) {
         super(board, color);
+    }
+
+    @Override
+    public String toString() {
+        return PIECE_PAWN;
     }
 
     @Override
@@ -54,9 +61,5 @@ public class Pawn extends ChessPiece {
             }
         }
         return mat;
-    }
-    @Override
-    public String toString() {
-        return "P";
     }
 }
